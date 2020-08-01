@@ -3,12 +3,15 @@ Adicionando modulos no jboss cli
 module add --name=com.mysql --resources=/repository/mysql/mysql-connector-java/8.0.20/mysql-connector-java-8.0.20.jar --dependencies=javax.api,javax.transaction.api
 
 removendo modulos 
- module remove --name=com.mysql
+
+module remove --name=com.mysql
 
 adicionando o jdbc-driver
- /subsystem=datasources/jdbc-driver=mysql2:add(driver-name=mysql2,driver-module-name=com.mysql,driver-xa-datasource-class-name=com.mysql.cj.jdbc.MysqlXADataSource)
+
+/subsystem=datasources/jdbc-driver=mysql2:add(driver-name=mysql2,driver-module-name=com.mysql,driver-xa-datasource-class-name=com.mysql.cj.jdbc.MysqlXADataSource)
 
 removendo o jdbc-driver
+
 /subsystem=datasources/jdbc-driver=mysql2:remove
 
 criando o datasource
@@ -22,6 +25,7 @@ criando o datasource
  
  
  Repositorio forkado com commandos do jboss-cli
+ 
  https://github.com/edveloso/jboss-cli-snippets-compilation/blob/master/README.md
  
  

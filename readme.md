@@ -20,4 +20,9 @@ criando o datasource
 
  data-source remove --name=entregaappDS
  
+ 
+ Repositorio forkado com commandos do jboss-cli
+ https://github.com/edveloso/jboss-cli-snippets-compilation/blob/master/README.md
+ 
+ 
   

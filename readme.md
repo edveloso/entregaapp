@@ -1,30 +1,32 @@
-Adicionando modulos no jboss cli
+# Comandos do Jboss cli
+
+### Adicionando modulos no jboss cli
 
 module add --name=com.mysql --resources=/repository/mysql/mysql-connector-java/8.0.20/mysql-connector-java-8.0.20.jar --dependencies=javax.api,javax.transaction.api
 
-removendo modulos 
+### Removendo modulos 
 
 module remove --name=com.mysql
 
-adicionando o jdbc-driver
+### Adicionando o jdbc-driver
 
 /subsystem=datasources/jdbc-driver=mysql2:add(driver-name=mysql2,driver-module-name=com.mysql,driver-xa-datasource-class-name=com.mysql.cj.jdbc.MysqlXADataSource)
 
-removendo o jdbc-driver
+### Removendo o jdbc-driver
 
 /subsystem=datasources/jdbc-driver=mysql2:remove
 
-criando o datasource
+### Criando o datasource
 
  data-source add --name=entregaappDS --jndi-name=java:jboss/datasources/entregaappDS --driver-name=mysql2 --connection-url=jdbc:mysql://localhost:3306/entregadb?createDatabaseIfNotExist=true --user-name=root --password=xxxxx --min-pool-size=10 --max-pool-size=20
  
  
- removendo o datasource
+ ### Removendo o datasource
 
  data-source remove --name=entregaappDS
  
  
- Repositorio forkado com commandos do jboss-cli
+ ### Repositorio forkado com commandos do jboss-cli
  
  https://github.com/edveloso/jboss-cli-snippets-compilation/blob/master/README.md
  

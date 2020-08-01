@@ -1,0 +1,12 @@
+  
+.settings/
+.project
+entregaapp-ear/target
+entregaapp-web/target
+entregaapp-ejb/target
+entregaapp-ear/.settings/
+entregaapp-ejb/.settings/
+entregaapp-web/.settings/
+entregaapp-ear/.project
+entregaapp-ejb/.project
+entregaapp-web/.project

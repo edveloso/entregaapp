@@ -31,4 +31,6 @@ module remove --name=com.mysql
  https://github.com/edveloso/jboss-cli-snippets-compilation/blob/master/README.md
  
  
-  
+### Livro com documentação do Jboss
+
+https://jboss-books.gitbooks.io/wildfly/content/
